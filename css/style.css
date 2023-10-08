@@ -55,7 +55,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
 /****** Header ***********/
@@ -63,6 +63,8 @@ a {
 .header_first_line {
     display: flex;
     justify-content: space-between;
+    background-color: red;
+
 }
 
 .header_first_line img{
@@ -76,8 +78,22 @@ a {
 .header_list {
     display: flex;
     justify-content: space-between;
+    background-color: red;
+
 }
 
+/****** Introduction ***********/
+
+.filters {
+    display: inline;
+    background-color: red;
+}
+
+.filters_list {
+    display: flex;
+    justify-content:space-around;
+    background-color: red;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
