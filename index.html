@@ -17,17 +17,19 @@
 <body>
     <div class="main-container">
         <header>
-            <div class="header_first_line">
-                <img src="./images/logo/Booki.png" alt="">
+            <div class="header">
+                <div class="header_logo">
+
+                    <img src="./images/logo/Booki.png" alt="">
+                </div>
                 <div class="header_links">
-                    <a href="#hebergements_group">Hébergements</a>
+                    <a class="active" href="#hebergements_group">Hébergements</a>
                     <a href="#activites_group">Activités</a>
                 </div>
             </div>
-     
         </header>
         <main>
-            <div class="Introduction">
+            <div class="informations">
                 <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <span>En plein centre-ville ou en pleine nature</span>
                 <form method="get" action="">
@@ -171,8 +173,8 @@
                             </article>
                         </a>
                     </div>
-                    <div class="populaires-title">
-                        <h3 class="section-title">Afficher plus</h3>
+                    <div>
+                        <h3 class="show_more_hebergements">Afficher plus</h3>
                     </div>
                 </section>
                 <section class="populaires">
@@ -297,7 +299,7 @@
         </main>
         <footer class="footer">
             <div>
-                <ul>
+                <ul class="footer_column">
                     <li><h3>A propos</h3></li>
                     <li><a href="">Fonctionnement du site</a></li>
                     <li><a href="">Conditions générales</a></li>
@@ -305,7 +307,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="footer_column">
                     <li><h3>Nos hébergements</h3></li>
                     <li><a href="">Charte qualité</a></li>
                     <li><a href="">Proposer votre hôtel</a></li>
@@ -313,7 +315,7 @@
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="footer_column">
                     <li><h3>Assistance</h3></li>
                     <li><a href="">Centre d'aide</a></li>
                     <li><a href="">Nous contacter</a></li>                
