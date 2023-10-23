@@ -64,6 +64,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    height: 79px;
 }
 
 .header_logo {
@@ -135,6 +136,11 @@ a {
     border-color: var(--main-bg-color);
 }
 
+#site-search::placeholder{
+    color: black;
+    opacity: 1;
+}
+
 .search_button_desktop {
     background-color: var(--main-color);
     color: white;
@@ -169,17 +175,18 @@ a {
 
 .filters_list li button{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 4px 19px 4px 19px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     background-color: white;
     height: 50px;
+    font-weight: 700;
 }
 
 .filters_list li button:hover {
-    background-color: --filter-bg-color;
+    background-color: var(--filter-bg-color);
 }
 
 .filters_list li button img {
@@ -382,6 +389,15 @@ a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .header_links a:active{
+        color: var(--main-color);
+        border-top: 2px solid var(--main-color);
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
     .filters {
         flex-direction: column;
         gap: 10px;
@@ -476,6 +492,10 @@ a {
         padding : 0 20px;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
     .searchbar{
         width: 100%;
     }
@@ -483,6 +503,8 @@ a {
     #site-search {
         width: 219px;
     }
+
+
 
     /* .search_button {
         height: 49px;
@@ -505,22 +527,29 @@ a {
 
     .filters_list{
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 10px;
     }
 
     .filters_list li{
         padding: 0;
-        flex-basis: 50%;
         width: 162.5px;
     }
 
     .filters_list li button{
         width: 100%;
-        padding: 0;
     }
 
     .filters_list li button:active {
-        background-color: --filter-bg-color;
+        background-color: var(--filter-bg-color);
+    }
+
+    .fa-info{
+        width: 24px;
+        height: 24px;
+    }
+
+    .infobar span {
+        width: 301px;
     }
 
     .hebergements-and-populaires { 
