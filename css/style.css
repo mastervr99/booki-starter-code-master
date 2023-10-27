@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin: 0;
 }
 
 .main-container {
@@ -82,21 +82,23 @@ a {
 }
 
 .header_links{
+    height: 35px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 50px 0px 50px;
     gap: 68px;
     
 }
 
 .header_links a {
     padding-top: 15px;
+    border-top: 2px solid transparent;
 }
 
 
 .header_links a:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+    border-top-color: var(--main-color);
 }
 
 
@@ -132,7 +134,7 @@ a {
     font-weight: 700;
     font-size: 18px;
     color: black;
-    border: 1px;
+    border: 1px solid;
     border-color: var(--main-bg-color);
 }
 
@@ -282,7 +284,7 @@ a {
 }
 
 .show_more_hebergements h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -471,16 +473,21 @@ a {
         width: 100%;
         justify-content: space-around;
         gap: 15px;
+        padding: 0;
     }
 
-    .header a{
+    .header_links a{
         width: 100%;
         display: flex;
         justify-content: center;
+        border-top: 0;
+        border-bottom: 2px solid var(--main-bg-color);
     }
 
     .header_links a:hover{
         border-top: 0;
+        color: var(--main-color);
+        border-bottom-color: var(--main-color);
     }
 
     .header_links a:active{
