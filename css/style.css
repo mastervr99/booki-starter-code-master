@@ -424,9 +424,6 @@ a {
         justify-content: space-between;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
 
     .populaires-cards .card-title {
         font-size: 14px;
@@ -443,6 +440,12 @@ a {
 
     .activites-cards .card img {
         height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .populaires-cards a {
+        width: 30%;
     }
 }
 
@@ -510,16 +513,6 @@ a {
     #site-search {
         width: 219px;
     }
-
-
-
-    /* .search_button {
-        height: 49px;
-        width: 49px;
-        border: 1px;
-        border-radius: 15px;
-        padding: 15px 16px 15px 16px;
-    } */
     
     .search_button_desktop {
         display: none;
@@ -566,12 +559,10 @@ a {
     .populaires {
         display: flex;
         flex-direction: column;
-        align-items: center;
         border-radius: 0;
         margin-bottom: 0;
         padding: 30px 20px 30px 20px;
         gap: 15px;
-
     }
 
     .populaires-title{
