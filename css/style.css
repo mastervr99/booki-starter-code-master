@@ -251,10 +251,14 @@ a {
     gap: 30px;
 }
 
+.hebergements-cards a {
+    width: 30%;
+    min-width: 200px;
+}
+
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 12.5vw;
 }
 
 .hebergements-cards img {
@@ -275,7 +279,8 @@ a {
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 0;
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 .hebergements-cards .card-rating {
@@ -326,6 +331,7 @@ a {
 }
 
 .populaires-cards .card-subtitle {
+    font-size: 14px;
     margin: 0;
 }
 
@@ -336,7 +342,7 @@ a {
 /****** Activités ***********/
 
 .Activites-marseille{
-    padding: 30px 0 30px 30px;
+    padding: 30px 0;
 }
 
 .activites-cards {
@@ -348,9 +354,12 @@ a {
 
 }
 
+.activites-cards a {
+    width: 23%;
+}
+
 .activites-cards .card {
     height: 439px;
-    width: 15.5vw;
     padding: 0;
 }
 
@@ -587,6 +596,10 @@ a {
         gap: 15px;
     }
 
+    .hebergements-cards a {
+        width: 100%;
+    }
+
     .hebergements-cards {
         flex-direction: column;
     }
@@ -595,12 +608,16 @@ a {
         width: 100%;
     }
 
-    .activites {
-        padding: 0 20px;
+    .Activites-marseille{
+        padding: 30px;
     }
 
     .activites-cards{
         flex-direction: column;
+    }
+
+    .activites-cards a {
+        width: 100%;
     }
 
     .activites-cards .card {
