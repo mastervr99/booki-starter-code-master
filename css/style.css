@@ -582,7 +582,11 @@ a {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
 
+    .populaires-cards a, .hebergements-cards a {
+        display: flex;
+        justify-content: center;
     }
 
     .populaires-cards .card {
