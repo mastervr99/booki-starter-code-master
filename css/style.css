@@ -536,12 +536,13 @@ a {
 
     .filters_list{
         flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
     }
 
     .filters_list li{
         padding: 0;
-        width: 38vw;
+        width: 48%;
     }
 
     .filters_list li button{
