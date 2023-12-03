@@ -210,7 +210,7 @@ a {
     color: var(--main-color);
 }
 
-.infobar span{
+.infobar p{
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -572,7 +572,7 @@ a {
         background-color: var(--filter-bg-color);
     }
 
-    .infobar span {
+    .infobar p {
         width: 100%;
     }
 
