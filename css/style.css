@@ -380,6 +380,8 @@ a {
     display: flex;
     justify-content: space-between;
     background-color: var(--main-bg-color);
+    padding: 30px 30px 0 30px; 
+    gap: 50px;
 }
 
 .footer_column {
@@ -388,6 +390,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin: 0;
 }
 
 .footer_column h3 {
@@ -395,6 +398,22 @@ a {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
+
+/* Medium devices (tablets, less/equal than 1207px) */
+@media (max-width: 1207px) {
+    .hebergements-cards a {
+        min-width: 30%;
+    }
+}
+
+/* Medium devices (tablets, more/equal than 1225px) */
+@media (max-width: 1114px) {
+    .hebergements-cards a {
+        /* width: 1%; */
+        width: 1%;
+        min-width: 27%;
+    }
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -551,11 +570,6 @@ a {
 
     .filters_list li button:active {
         background-color: var(--filter-bg-color);
-    }
-
-    .fa-info{
-        width: 24px;
-        height: 24px;
     }
 
     .infobar span {
